@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>titus</title>
+  </head>
+  <body>
+    <nav>
+      <img src="./img/logo.jpg" alt="" />
+    </nav>
+
+    <main>
+      <div class="titulo">Primeiro, seu prato</div>
+      <div class="grid">
+        <div class="opcoes pratos">
+          <div
+            class="opcao prato-alcatra"
+            onclick="selecionarPrato('.prato-alcatra', 'Alcatra acebolada', 17.90)"
+          >
+            <img src="./img/alcatra.jpg" alt="" />
+            <div class="titulo">Alcatra acebolada</div>
+            <div class="descricao">Batata, Cebola, Arroz e Salada</div>
+            <div class="preco">R$ 17,90</div>
+            <div class="check">
+              <ion-icon name="chekmark-cirlce"></ion-icon>
+            </div>
+          </div>
+          <div
+            class="opcao prato-cavalo"
+            onclick="selecionarPrato('.prato-cavalo', 'Bife a cavalo', 18.90)"
+          >
+            <img src="./img/bifeCavalo.jpg" alt="" />
+            <div class="titulo">Bife a cavalo</div>
+            <div class="descricao">Ovo, Batata, Feijão e Arroz</div>
+            <div class="preco">R$ 18,90</div>
+            <div class="check">
+              <ion-icon name="chekmark-cirlce"></ion-icon>
+            </div>
+          </div>
+          <div
+            class="opcao prato-contra"
+            onclick="selecionarPrato('.prato-contra', 'Contra filé', 17.90)"
+          >
+            <img src="./img/contra.jpg" alt="" />
+            <div class="titulo">Contra filé</div>
+            <div class="descricao">Carne, Cebola, Arroz e Feijão</div>
+            <div class="preco">R$ 17,90</div>
+            <div class="check">
+              <ion-icon name="chekmark-cirlce"></ion-icon>
+            </div>
+          </div>
+         
+          
+        </div>
+      </div>
+      <div class="titulo">Agora, sua bebida</div>
+      <div class="grid">
+        <div class="opcoes bebidas">
+          <div
+            class="opcao bebida-coca"
+            onclick="selecionarBebida('.bebida-coca', 'Coca', 4.90)"
+          >
+            <img src="./img/coca.jpg" alt="" />
+            <div class="titulo">Coca</div>
+            <div class="descricao">Coquinha gelada</div>
+            <div class="preco">R$ 4,90</div>
+            <div class="check">
+              <ion-icon name="chekmark-cirlce"></ion-icon>
+            </div>
+          </div>
+          <div
+            class="opcao bebida-aguagas"
+            onclick="selecionarBebida('.bebida-aguagas', 'Água com gás', 3.70)"
+          >
+            <img src="./img/aguagas.jpg" alt="" />
+            <div class="titulo">Água com gás</div>
+            <div class="descricao">Refrescante</div>
+            <div class="preco">R$ 3,70</div>
+            <div class="check">
+              <ion-icon name="chekmark-cirlce"></ion-icon>
+            </div>
+          </div>
+          <div
+            class="opcao bebida-guarana"
+            onclick="selecionarBebida('.bebida-guarana', 'Guaraná Antartica', 4.00)"
+          >
+            <img src="./img/guarana.jpg" alt="" />
+            <div class="titulo">Guaraná Antartica</div>
+            <div class="descricao">Super gelado</div>
+            <div class="preco">R$ 4,00</div>
+            <div class="check">
+              <ion-icon name="chekmark-cirlce"></ion-icon>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="titulo">Agora, sua sobremesa</div>
+      <div class="grid">
+        <div class="opcoes doces">
+          <div
+            class="opcao torta-limao"
+            onclick="selecionarSobreMesa('.torta-limao', '.torta de limão', 4.90 )"
+          >
+            <img src="./img/limao.jpg" alt="" />
+            <div class="titulo">torta de limão</div>
+            <div class="descricao">Azedinha gostosa</div>
+            <div class="preco">R$ 4,90</div>
+            <div class="check">
+              <ion-icon name="chekmark-cirlce"></ion-icon>
+            </div>
+          </div>
+          <div class="opcao pudin" onclick="selecionarSobreMesa('.pudin', 'Pudin de leite condensado', 3.70)">
+            <img src="./img/pudin.jpg" alt="" />
+            <div class="titulo">Pudin de leite condensado</div>
+            <div class="descricao">Maravilhoso</div>
+            <div class="preco">R$ 3,70</div>
+            <div class="check">
+              <ion-icon name="chekmark-cirlce"></ion-icon>
+            </div>
+          </div>
+          <div
+            class="opcao torta-amora"
+            onclick="selecionarSobreMesa('.torta-amora', 'Torta de amora', 17.90)"
+          >
+            <img src="./img/amora.jpg" alt="" />
+            <div class="titulo">Torta de amora</div>
+            <div class="descricao">Carne, Cebola, Arroz e Feijão</div>
+            <div class="preco">R$ 17,90</div>
+            <div class="check">
+              <ion-icon name="chekmark-cirlce"></ion-icon>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div class="footer">
+        <a href="#" class="fazer-pedido ">
+            selecione os 3 itens<br /> para fechar o pedido
+        </a>
+    </div>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
